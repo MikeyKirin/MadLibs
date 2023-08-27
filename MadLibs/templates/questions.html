@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>MikeyLibs</title>
+</head>
+<body>
+  <h1>Welcome to MikeyLibs!</h1>
+  <form action="/story">
+    {% for prompt in prompts %}
+      <p>{{ prompt }}:
+        <input name="{{ prompt }}">
+      </p>
+    {% endfor %}
+    <button>Build Your Story!</button>
+  </form>
+</body>
+</html>
